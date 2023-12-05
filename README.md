@@ -5,13 +5,12 @@ Using a backdoored facial recognition neural network, this repository applies th
 
 
 # Contents
-- [Dependencies](#Dependencies)
 - [Dataset](#Dataset)
 - [Folder Structure](#Folder-Structure)
 - [Architecture](#Architecture)
-- [Usage](#Usage)
-- [Evaluation](#Evaluating-the-Pruning-Defense-Model-On-Test-set)
-- [Results and Observations](#Results-and-Observations)
+- [Methodology](#Methodology)
+- [Observation](#Observation)
+- [Conclusion](#Conclusion)
 
 # Dataset
    1. Download the validation and test datasets from [here](https://drive.google.com/drive/folders/1Rs68uH8Xqa4j6UxG53wzD0uyI8347dSq?usp=sharing) and store them under `data/` directory.
@@ -95,22 +94,12 @@ Non-trainable params: 0
 ______________________________________________________________________________________
 ```
 
-## Introduction
-
-Backdoor attacks pose a significant threat to the integrity of neural network classifiers. This project presents a defense mechanism against such attacks, specifically in neural networks trained for facial recognition tasks, leveraging a pruning-based strategy.
-
-
-## Methodology
+# Methodology
 
 Our defense strategy involves iterative pruning of the neural network to eliminate the backdoor while retaining classification capabilities. This involves targeting specific layers and channels based on their activation values and ceasing when validation accuracy degrades beyond an acceptable threshold.
 
-## Dataset Visualization
 
-- **Clean Dataset**: Visualizations provide insights into the data the model is expected to classify correctly under normal circumstances.
-- **Poisoned Dataset**: Demonstrates how the backdoor trigger (e.g., sunglasses) is inserted into the images, altering the network's output.
-
-
-# Results and Observations
+#Observations
 ![image](images/image2.png)
 ## Performance on Test dataset
 | Test Dataset | Threshold = 2% | Threshold = 4% | Threshold = 10% |
@@ -118,8 +107,6 @@ Our defense strategy involves iterative pruning of the neural network to elimina
 | Clean Accuracy | `95.526111%` | 92.291504% | 84.544037% |
 | ASR | 99.976617% | 99.984412% | `77.209665%` | 
 
-
-# Observations
 
 - Pruning in descending order of mean activations implies removing the most highly activated channels first, which are often integral to the network's output.
 - The removal of critical channels can drastically impact the model's generalization capability, leading to diminished accuracy on clean inputs.
