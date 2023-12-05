@@ -115,8 +115,8 @@ Our defense strategy involves iterative pruning of the neural network to elimina
 ## Performance on Test dataset
 | Test Dataset | Threshold = 2% | Threshold = 4% | Threshold = 10% |
 |---|---|---|---|
-| Clean Accuracy | `95.90%` | 92.29% | 85.54% |
-| ASR | 100% | 99.98% | `77.208%` | 
+| Clean Accuracy | `95.526111%` | 92.291504% | 84.544037% |
+| ASR | 99.976617% | 99.984412% | `77.209665%` | 
 
 
 # Observations
