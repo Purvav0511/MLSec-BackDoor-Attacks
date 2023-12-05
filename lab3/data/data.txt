@@ -1,0 +1,3 @@
+# Place your '.h5' data files in this directory
+
+Download the validation and test datasets from google drive mentioned in the GitHub repo with the question and store them under data/ directory.
