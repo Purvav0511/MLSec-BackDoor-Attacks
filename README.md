@@ -110,7 +110,7 @@ Our defense strategy involves iterative pruning of the neural network to elimina
 
 
 # Results and Observations
-![image](images/Evaluation_metrics.png)
+![image](images/image2.png)
 ## Performance on Test dataset
 | Test Dataset | Threshold = 2% | Threshold = 4% | Threshold = 10% |
 |---|---|---|---|
