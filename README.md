@@ -9,8 +9,8 @@ Using a backdoored facial recognition neural network, this repository applies th
 - [Folder Structure](#Folder-Structure)
 - [Architecture](#Architecture)
 - [Methodology](#Methodology)
-- [Results and Observations](#Results and Observations)
-- [Performance on Test dataset](#Performance on Test dataset)
+- [Results and Observations](#Results_and_Observations)
+- [Performance on Test dataset](##Performance_on_Test_dataset)
 - [Conclusion](#Conclusion)
 
 # Dataset
@@ -99,10 +99,10 @@ ________________________________________________________________________________
 
 Our defense strategy involves iterative pruning of the neural network to eliminate the backdoor while retaining classification capabilities. This involves targeting specific layers and channels based on their activation values and ceasing when validation accuracy degrades beyond an acceptable threshold.
 
-#Results and Observation
+# Results_and_Observations
 
 ![image](images/image2.png)
-## Performance on Test dataset
+## Performance_on_Test_dataset
 | Test Dataset | Threshold = 2% | Threshold = 4% | Threshold = 10% |
 |---|---|---|---|
 | Clean Accuracy | `95.526111%` | 92.291504% | 84.544037% |
