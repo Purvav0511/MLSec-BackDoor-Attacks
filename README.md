@@ -18,6 +18,32 @@ This repository is dedicated to the detection and mitigation of backdoor attacks
 
 Backdoor attacks pose a significant threat to the integrity of neural network classifiers. This project presents a defense mechanism against such attacks, specifically in neural networks trained for facial recognition tasks, leveraging a pruning-based strategy.
 
+[lab3]/
+├── data/
+│   ├── clean/
+│   │   ├── valid.h5
+│   │   └── test.h5
+│   └── bd/
+│       ├── bd_valid.h5
+│       └── bd_test.h5
+├── models/
+│   ├── bd_net.h5
+│   ├── bd_weights.h5
+├── repaired_models_asc/
+│   ├── model_drop_2.h5
+│   ├── model_drop_4.h5
+│   ├── model_drop_10.h5
+├── repaired_models_desc/
+│   ├── model_drop_2.h5
+│   ├── model_drop_4.h5
+│   ├── model_drop_10.h5
+├── architecture.py
+├── backdoor_detector.py
+├── Report.pdf
+├── README.md
+└── Machine Learning for CyberSecurity Backdoor Attacks.ipynb
+
+
 ## Methodology
 
 Our defense strategy involves iterative pruning of the neural network to eliminate the backdoor while retaining classification capabilities. This involves targeting specific layers and channels based on their activation values and ceasing when validation accuracy degrades beyond an acceptable threshold.
